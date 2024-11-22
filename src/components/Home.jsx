@@ -217,7 +217,7 @@ const HomePage = ()=>{
       </ul>
     </div>
     {/*Recycle*/}
-    <div className="recycling_adv maxWidth">
+    <div className="recycling_adv ">
       <img
         src={recycling}
         alt="recycling_photo"
