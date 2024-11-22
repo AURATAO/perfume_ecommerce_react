@@ -3,16 +3,13 @@
 .selected_content {
     background-color: $success;
     width: 100%;
-
-
-    li{
-        list-style: none;
-    }
+    margin: auto;
+    
     .selected_products {
       max-width: 1110px;
       width: 100%;
       margin: auto;  
-
+      padding-left:0 ;
     }
      li{
 

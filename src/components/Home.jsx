@@ -158,9 +158,9 @@ const HomePage = ()=>{
         </div>
       </div>
       {/*Select items*/}
-      <div className="selected_content my-4 py-4">
-      <ul className="selected_products row gy-1  ">
-        <li className="cardItem  col-12 col-md-4 ">
+      <div className="selected_content my-4 py-4  ">
+      <ul className="selected_products row gy-1 p-0  ">
+        <li className="cardItem  col-12 col-md-4 px-lg-0">
           <a href="#">
             <div className="selected_img ">
               <img
@@ -217,7 +217,7 @@ const HomePage = ()=>{
       </ul>
     </div>
     {/*Recycle*/}
-    <div className="recycling_adv container">
+    <div className="recycling_adv maxWidth">
       <img
         src={recycling}
         alt="recycling_photo"
