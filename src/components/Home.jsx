@@ -23,9 +23,9 @@ const HomePage = ()=>{
                     presenting oneself a costume that according to the person who
                     wears it.
                     </p>
-                    <a href="#" className="btn btn-outline-light rounded-pill px-5 py-2">
+                    <button href="#" className="btn btn-outline-light rounded-pill px-5 py-2">
                     Shop now
-                    </a>
+                    </button>
                 </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React, {useState,useEffect,useContext} from 'react';
-import { WishlistContext } from '../App';
+// import { WishlistContext } from '../App';
 
 
 
