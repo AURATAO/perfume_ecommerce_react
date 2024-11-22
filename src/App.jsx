@@ -8,14 +8,14 @@ import WishlistPage from './components/WishlistPage';
 import Footer from './components/Footer'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-//create context
+// create context
 // export const WishlistContext = createContext();
 
 function App() {
   // const [wishlist, setWishlist] = useState([]);
 
 
-  // //add to the Wishlist 
+  //add to the Wishlist 
   // const addWishlist = (product)=>{
 
   //   if(!wishlist.some((item)=>
@@ -27,13 +27,13 @@ function App() {
   // }
 
 
-  const removeProducts = (productId)=>{
-    setWishlist((prev) => prev.filter((product)=>product.id !== productId))
+  // const removeProducts = (productId)=>{
+  //   setWishlist((prev) => prev.filter((product)=>product.id !== productId))
 
-  }
+  
   return (
     <>
-    <WishlistContext.Provider >
+    <WishlistContext.Provider>
       <Router>
         <Header />
         <Routes>
