@@ -16,24 +16,24 @@ function App() {
 
 
   //add to the Wishlist 
-  const addWishlist = (product)=>{
+  // const addWishlist = (product)=>{
 
-    if(!wishlist.some((item)=>
-      item.id===product.id
-    )){
-      setWishlist((prev)=>[...prev, product]);
-      console.log('add product to wishlist ')
-    }
-  }
+  //   if(!wishlist.some((item)=>
+  //     item.id===product.id
+  //   )){
+  //     setWishlist((prev)=>[...prev, product]);
+  //     console.log('add product to wishlist ')
+  //   }
+  // }
 
+  // const removeProducts = (productId)=>{
+  //   setWishlist((prev) => prev.filter((product)=>product.id !== productId))
 
-  const removeProducts = (productId)=>{
-    setWishlist((prev) => prev.filter((product)=>product.id !== productId))
+  // }
 
-  }
   return (
     <>
-    <WishlistContext.Provider value={{wishlist,addWishlist,removeProducts}}>
+    <WishlistContext.Provider value={{wishlist}}>
       <Router basename="/perfume_ecommerce_react">
         <Header />
         <Routes>

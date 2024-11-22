@@ -67,7 +67,12 @@ function ProductPage() {
           <p className="card-text text-secondary fw-light">NT$ {product.price}</p>
           </div>
           <div className='d-flex justify-center algin-center gap-2'>
-            <img src={likeIcon} alt="likeicon" className='' style={{width: '20px'}} onClick={()=>toggleLike(product)}/>
+          <i
+                  className={`bi ${likedProducts.some((item) => item.id === product.id) ? 'bi-suit-heart-fill' : 'bi-suit-heart'} liked_icon `}
+                  style={{ width: '20px', cursor: 'pointer' }}
+                  onClick={() => toggleLike(product)}
+                ></i>
+            {/* <img src={likeIcon} alt="likeicon" className={likedProducts.some((item)=> item.id === product.id) ? 'liked' : ''} style={{width: '20px'}} onClick={()=>toggleLike(product)}/> */}
             <img src={cartIcon} alt="likeicon" className='' style={{width: '20px'}}/>
           </div>
           </div>
