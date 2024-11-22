@@ -8,25 +8,23 @@ import WishlistPage from './components/WishlistPage';
 import Footer from './components/Footer'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-
 //create context
-export const WishlistContext = createContext();
+// export const WishlistContext = createContext();
 
 function App() {
-  const [wishlist, setWishlist] = useState([]);
+  // const [wishlist, setWishlist] = useState([]);
 
 
+  // //add to the Wishlist 
+  // const addWishlist = (product)=>{
 
-  //add to the Wishlist 
-  const addWishlist = (product)=>{
-
-    if(!wishlist.some((item)=>
-      item.id===product.id
-    )){
-      setWishlist((prev)=>[...prev, product]);
-      console.log('add product to wishlist ')
-    }
-  }
+  //   if(!wishlist.some((item)=>
+  //     item.id===product.id
+  //   )){
+  //     setWishlist((prev)=>[...prev, product]);
+  //     console.log('add product to wishlist ')
+  //   }
+  // }
 
 
   const removeProducts = (productId)=>{
@@ -35,7 +33,7 @@ function App() {
   }
   return (
     <>
-    <WishlistContext.Provider value={{ wishlist, addWishlist, removeProducts }}>
+    <WishlistContext.Provider >
       <Router>
         <Header />
         <Routes>
