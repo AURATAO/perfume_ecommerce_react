@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext }  from 'react';
 import axios from 'axios';
-import { WishlistContext } from '../App';
+// import { WishlistContext } from '../App';
 import likeIcon from '../assets/img/products/like-brown.png';
 import cartIcon from '../assets/img/products/cart-brown.png';
 
@@ -8,7 +8,7 @@ function ProductPage() {
   const [products, setProducts] = useState([]); // State to store products
   const [loading, setLoading] = useState(true)// State to manage loading
   const [likedProducts, setLikedProducts] = useState([]);
-  const {addWishlist} = useContext(WishlistContext);
+  // const {addWishlist} = useContext(WishlistContext);
 
   // Making the AJAX request using Axios
   useEffect(()=>{
