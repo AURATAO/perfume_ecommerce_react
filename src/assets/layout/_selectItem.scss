@@ -1,0 +1,108 @@
+
+//select items
+.selected_content {
+    background-color: $success;
+    width: 100%;
+
+
+    li{
+        list-style: none;
+    }
+    .selected_products {
+      max-width: 1110px;
+      width: 100%;
+      margin: auto;  
+
+    }
+     li{
+
+        height: 100%;
+        list-style: none;      // Ensure no default list styles
+        margin: 0;             // Remove any list-specific margin
+    }
+    .selected_img {
+      width: 100%;
+      height: 450px;
+      position: relative;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+  
+      .soldout_tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        font-size: 24px;
+      }
+    }
+  
+    .selected_content_text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    //   padding: 10px 0;
+  
+      h3 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+  
+      a {
+        font-size: 16px;
+      }
+  
+      .price {
+        font-size: 16px;
+        display: flex;
+        gap: 8px;
+  
+        .salesPrice {
+          color: $secondary;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+  
+  // Media Queries for responsive design
+  @media (max-width: 1000px) {
+    .selected_products {
+      max-width: 90%; // Reduce width for smaller screens
+    }
+  
+    .selected_products li:first-child .selected_img img {
+      object-position: bottom;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .selected_products {
+      max-width: 100%;  // Utilize full width on small screens
+      flex-direction: column;
+      padding: 0 15px; // Add slight padding on small screens
+    }
+  
+    .selected_products li {
+      width: 100%; // Make items stack vertically
+    }
+  
+    .selected_img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1 / 1; // Maintain square aspect ratio
+      object-fit: cover;
+    }
+  }

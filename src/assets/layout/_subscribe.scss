@@ -1,0 +1,101 @@
+  // Subscribe.scss
+
+  .subscribe {
+    background-image: url('./img/subscribe/subscribeBackground.jpg');
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  
+    .maxWidth {
+      max-width: 1100px;
+      width: 100%;
+      margin: auto;
+      // margin-bottom: 112px;
+  
+      h2 {
+        color: #8d8d8d;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 48px;
+      }
+  
+      .subscribe_input {
+        display: flex;
+        // margin-top: 30px;
+        width: 100%;
+        max-width: 350px;
+        position: relative;
+  
+        input {
+          width: 100%;
+          background-color: whitesmoke;
+          cursor: pointer; // Indicates that the element is clickable
+          padding: 20px;
+          border: 2px solid #916000;
+          font-size: 16px;
+          border-radius: 4px;
+  
+          &:focus-visible {
+            outline: 0px;
+            border: 2px solid #6c4700;
+          }
+        }
+  
+        button {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 38%;
+          padding: 20px;
+          text-align: center;
+          border: none;
+          background: #916000;
+          font-size: 16px;
+          color: #ffffff;
+          cursor: pointer;
+          border-radius: 0px 4px 4px 0px;
+          height: 100%;
+  
+          &:hover {
+            background: #6c4700;
+          }
+        }
+  
+        &:hover > input {
+          border: 2px solid #6c4700;
+        }
+      }
+    }
+  }
+  
+  // Media Queries for Responsiveness
+  @media (min-width: 767px) {
+    .subscribe {
+      background-size: 250%;
+      background-position: 40% 45%;
+      padding: 0 14px;
+  
+        .subscribe_input input {
+          max-width: 345px;
+        }
+      
+    }
+  }
+
+  @media (min-width: 576px) {
+    .subscribe {
+      background-size: 100%;
+      background-position: 40% 45%;
+      padding: 0 14px;
+
+        .subscribe_input input {
+          max-width: 345px;
+        }
+    }
+  }
+

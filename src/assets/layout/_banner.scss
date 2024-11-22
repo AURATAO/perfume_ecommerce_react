@@ -1,0 +1,60 @@
+// Home content 
+main {
+
+    .banner {
+      background-image: url('./img/home/banner.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 844px;
+
+      .bannerContainer{
+        max-width: 1100px;
+        width: 100%;
+      }
+      .banner_content {
+        max-width: 450px;
+        gap: 20px;
+  
+        h1 {
+          font-size: 2.5rem;
+        }
+  
+        p {
+          font-size: 1.25rem;
+        }
+  
+        a {
+          border: 2px solid #fff;
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+          }
+        }
+      }
+    }
+    .content {
+        width:100%;
+        max-width: 1110px;
+        display: flex;
+        flex-direction:column;
+
+        img{
+            width: 100%;
+            aspect-ratio: 1/1; 
+            object-fit: cover;
+        }
+      }
+
+      @media (max-width: 767px) { // Use max-width for responsive designs
+        .banner {
+          height: calc(70vh - 56px);
+          min-height: 800px;
+        }
+      
+        .banner_content {
+          width: 100%;
+          min-width: auto;
+          padding: 0 15px;
+        }
+      }
+    }  
