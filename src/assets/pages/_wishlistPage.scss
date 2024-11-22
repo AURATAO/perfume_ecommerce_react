@@ -1,3 +1,8 @@
-.bg-dark-hover:hover {
-    color: #343a40;
+.remove-dark-hover:hover { 
+  color: #916019; 
+  cursor: pointer; 
   }
+
+.border-hover:hover {
+  border: 1px solid #916019 !important;
+}

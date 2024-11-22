@@ -40,8 +40,8 @@ function WishlistPage(){
           <p className="card-text text-decoration-line-through fw-light ">NT$ {product.origin_price}</p>
           <p className="card-text text-secondary fw-light">NT$ {product.price}</p>
           </div>
-          <div className='btn border' onClick={()=>removeFroWishlist(product.id)}>
-            <p className='m-0'>Remove</p>
+          <div className='btn border border-hover' onClick={()=>removeFroWishlist(product.id)}>
+            <p className='m-0 remove-dark-hover'>Remove</p>
           </div>
           </div>
         </div>
