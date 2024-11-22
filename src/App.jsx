@@ -7,6 +7,8 @@ import ProductPage from './components/ProductPage';
 import WishlistPage from './components/WishlistPage';
 import Footer from './components/Footer'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 //create context
 export const WishlistContext = createContext();

@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useContext }  from 'react';
 import axios from 'axios';
-// import { WishlistContext } from '../App';
-import likeIcon from '../assets/img/products/like-brown.png';
+import '../assets/all.scss';
 import cartIcon from '../assets/img/products/cart-brown.png';
 
 function ProductPage() {
@@ -54,9 +53,20 @@ function ProductPage() {
   }
 
     return (
+     <>
+      <div className='brand-collection d-none collectionBar d-md-block'>
+          <ul className='d-flex justify-content-start  align-items-center gap-4 maxWidth px-3'>
+            <li ><a href="#">CHANEL</a></li>
+            <li><a href="#">Jo Malone</a></li>
+            <li><a href="#">Curology</a></li>
+            <li><a href="#">Dior</a></li>
+            <li><a href="#">Chloe</a></li>
+            <li><a href="#">Zara</a></li>
+          </ul>
+      </div>
       <div className='productBoard m-auto row d-flex  align-items-center flex-wrap g-4 g-lg-3 pb-5 pt-[30px] justify-content-md-center justify-content-lg-between'>
         {products.map((product)=>(
-        <div className="col-12 col-md-4 col-lg-2 w-md-50 w-lg-225" key={product.id}>
+        <div className="col-12 col-md-6 col-lg-3 w-md-50 w-lg-225" key={product.id}>
         <div className="card border-0"  >
           <img src={product.image} className="card-img-top w-100 pb-2" alt="..."/>
           <div className="">
@@ -81,6 +91,8 @@ function ProductPage() {
         )
         )}
       </div>
+      </>
+      
     );
   }
   

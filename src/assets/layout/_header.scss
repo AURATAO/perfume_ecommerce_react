@@ -1,3 +1,5 @@
+
+  
   //header
   .header{
     background-color: white;
@@ -35,10 +37,13 @@
         list-style: none; 
         padding: 0; /* Reset padding */
         margin: 0; /* Reset margin in order to make  */
+       
     
         li {
           width: 100%;
-          text-decoration:none
+          text-decoration:none;
+          list-style: none;
+          
         }
     
         a {
@@ -65,3 +70,31 @@
         }
         }  
     }
+
+
+
+.dropdown-menu{
+  background-color: $dropdownColor;
+
+  .dropdown-item {
+    background-color: $dropdownColor;
+  }
+
+
+  li{
+    background-color: #6C757D;
+  }
+
+
+
+}
+
+.text-dark-hover:hover{
+  color: black !important;
+}
+
+.custom-dropdown{
+  position: absolute;
+  left: 0;
+  width: 100vw; 
+}

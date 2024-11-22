@@ -48,7 +48,7 @@ const HomePage = ()=>{
                 全新嗅覺體驗，花香四溢、明亮馥郁。結合茉莉、依蘭依蘭、橙花和最迷人的格拉斯晚香玉之花香，呈現出夢幻花香氣息。
                 極具女性特質的香奈兒嘉柏麗香水，專為光芒四射的她而生。
               </p>
-              <a href="#" className="text-decoration-none text-warning">
+              <a href="#" className="text-decoration-none checkMore">
                 查看更多
               </a>
             </div>
@@ -72,7 +72,7 @@ const HomePage = ()=>{
               <p>
                 生薑與溫醇的肉桂香、紅糖的香甜摻和成一氣，溫暖微辛的氣息反倒形成一股輕煙氤氳開來，還帶點微微煙醺感漫溢在整個鼻息之間，細聞之下,又還有溫溫淡淡的木香，溫和而暖心。
               </p>
-              <a href="#" className="text-decoration-none text-warning">
+              <a href="#" className="checkMore text-decoration-none">
                 查看更多
               </a>
             </div>
@@ -95,7 +95,7 @@ const HomePage = ()=>{
               <p>
                 N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。
               </p>
-              <a href="#" className="text-decoration-none text-warning">
+              <a href="#" className="text-decoration-none checkMore">
                 查看更多
               </a>
             </div>
@@ -169,9 +169,9 @@ const HomePage = ()=>{
                 data-aos="fade-right"
               />
             </div>
-            <div className="selected_content_text">
-              <h3>Poppy & Barley</h3>
-              <a href="#">Jo Malone</a>
+            <div className="selected_content_text ">
+              <h3 className='text-decoration-none'>Poppy & Barley</h3>
+              <a href="#" className='text-decoration-none'>Jo Malone</a>
               <div className="price">
                 <p>NT$1,380</p>
                 <p className="salesPrice">NT$1,580</p>
