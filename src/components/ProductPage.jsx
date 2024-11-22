@@ -66,15 +66,15 @@ function ProductPage() {
       </div>
       <div className='productBoard m-auto row d-flex  align-items-center flex-wrap g-4 g-lg-3 pb-5 pt-[30px] justify-content-md-center justify-content-lg-between'>
         {products.map((product)=>(
-        <div className="col-12 col-md-6 col-lg-3 w-md-50 w-lg-225" key={product.id}>
+        <div className="col-12 col-md-6 col-lg-3 w-md-50 w-lg-225 gy-lg-5" key={product.id}>
         <div className="card border-0"  >
           <img src={product.image} className="card-img-top w-100 pb-2" alt="..."/>
           <div className="">
           <h5 className="fs-4 mb-2">{product.title}</h5>
           <p className="fw-light mb-0">{product.category}</p>
-          <div className='d-flex justify-center algin-center gap-2'>
-          <p className="card-text text-decoration-line-through fw-light ">NT$ {product.origin_price}</p>
-          <p className="card-text text-secondary fw-light">NT$ {product.price}</p>
+          <div className='d-flex justify-center algin-center gap-2 '>
+          <p className="card-text text-decoration-line-through fw-light my-1">NT$ {product.origin_price}</p>
+          <p className="card-text text-secondary fw-light m-0">NT$ {product.price}</p>
           </div>
           <div className='d-flex justify-center algin-center gap-2'>
           <i
